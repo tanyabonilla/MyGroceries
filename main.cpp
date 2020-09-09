@@ -26,7 +26,11 @@ int main()
     }
   }while( input != 'q' && input != 'Q' );
 
+
+
   int in = 1;
+  cout << endl;
+  cout << "~~~~ MY GROCERIES ~~~~" << endl;
   if (!list.empty()) {
       for (vector<string>::const_iterator i = list.begin(); i != list.end(); ++i) {
           cout << in++ << ". " << *i << endl;
