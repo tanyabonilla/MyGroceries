@@ -25,6 +25,15 @@ int main()
         list.push_back(item);
     }
   }while( input != 'q' && input != 'Q' );
-    
+
+  int in = 1;
+  if (!list.empty()) {
+      for (vector<string>::const_iterator i = list.begin(); i != list.end(); ++i) {
+          cout << in++ << ". " << *i << endl;
+      }
+  } else {
+      cout << "there are no items on the list.\n";
+  }
+
   return 0;
 }
